@@ -3,6 +3,7 @@ package br.com.caelum.fj11.cap14.banco;
 public abstract class Conta {
 	
 	private int numero;
+	private String nome;
 
 	protected double saldo;
 
@@ -35,7 +36,15 @@ public abstract class Conta {
 			return false;
 		}
 		Conta outraConta = (Conta) obj;
-		return (this.numero == outraConta.numero);
+		return ((this.numero == outraConta.numero) && (this.nome.equals(outraConta.nome)));
+	}
+
+	public String getNome() {
+		return nome;
+	}
+
+	public void setNome(String nome) {
+		this.nome = nome;
 	}
 	
 }

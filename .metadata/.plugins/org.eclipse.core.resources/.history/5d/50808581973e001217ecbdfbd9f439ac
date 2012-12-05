@@ -1,0 +1,22 @@
+package br.com.caelum.fj11.cap14;
+
+import java.math.BigDecimal;
+import java.math.MathContext;
+
+public class Exe08 {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		
+		double x1 = 0.1;
+		for (int i=0;i<10;i++)
+			x1 += 0.1;
+		
+		BigDecimal valor = new BigDecimal("99999999.9999", new MathContext(10));
+		
+		System.out.println(valor.longValue());
+	}
+
+}

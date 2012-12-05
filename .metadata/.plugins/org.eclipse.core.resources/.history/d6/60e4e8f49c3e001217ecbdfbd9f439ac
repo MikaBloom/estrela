@@ -1,0 +1,13 @@
+package br.com.caelum.fj11.cap14.exe10;
+
+import br.com.caelum.fj11.cap14.banco.ContaCorrente;
+
+public class GuardadorDeObjetos {
+
+	public void adicionaObjeto(Object o) {
+		
+	}
+
+	
+	
+}

@@ -1,0 +1,16 @@
+package br.com.caelum.fj11.cap14;
+
+public class Exe11 {
+	public static void main(String[] args) {
+
+		String str = "Fernando";
+
+		Exe11.imprime(str);
+
+	}
+
+	public static void imprime(String s) {
+		for (int i = 0; i < s.length(); i++)
+			System.out.println(s.charAt(i));
+	}
+}
