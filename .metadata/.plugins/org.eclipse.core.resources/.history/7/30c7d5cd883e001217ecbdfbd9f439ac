@@ -1,0 +1,15 @@
+package br.com.caelum.fj11.cap14;
+
+public class Teste {
+
+	public static void main(String[] args) {
+		String s = "fj11";
+
+		String outra1 = s.toUpperCase();
+		String outra2 = s.replace('1', '2');
+		
+		// String's sao imutaveis...
+		System.out.println(outra1 + " " + outra2);
+	}
+
+}
