@@ -1,5 +1,7 @@
 package br.com.caelum.fj11.cap14;
 
+import javax.swing.JOptionPane;
+
 public class Exe03 {
 
 	/**
@@ -28,6 +30,13 @@ public class Exe03 {
 		// verificar a javadoc da classe String na API
 		System.out.println(x1);
 
+		// Testando o metodo parseInt
+		try{
+			int i = Integer.parseInt(JOptionPane.showInputDialog("Informe um numero inteiro:"));
+			JOptionPane.showMessageDialog(null, "Número digitado: " + i);
+		} catch (NumberFormatException e){
+			JOptionPane.showMessageDialog(null, "Erro: \n" + e);
+		}
 	}
 
 }
