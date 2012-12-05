@@ -1,0 +1,17 @@
+
+public class HelloTime {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		long start = System.currentTimeMillis();
+		System.out.println("Hello > start: " + start);
+		for (int t=0; t<1000; t++){
+			System.out.println();
+		}
+		long end = System.currentTimeMillis();
+		System.out.println("Hello Runing time: " + (end-start) + " ms");
+	}
+
+}

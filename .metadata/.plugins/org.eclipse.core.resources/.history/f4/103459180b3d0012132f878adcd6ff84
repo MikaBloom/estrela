@@ -1,0 +1,24 @@
+package br.com.caelum.cap11.banco.model;
+
+public class Teste {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		
+		Cliente c = new Cliente();
+	
+		c.setDp(new DadosPessoais());
+		
+		c.setNome("John Smith");
+		
+		c.setEndereco("Avenida Paulista, 1009");
+		
+		c.setCpf("123123123-00");
+		
+		System.out.println(c);
+		
+	}
+
+}
